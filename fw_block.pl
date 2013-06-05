@@ -19,7 +19,7 @@ my $rv = 0;
 my $out_ar = [];
 my $errs_ar = [];
 
-my @networks = ('asian');
+my @networks = ('asian', 'russian');
 
 sub newchain
 {
@@ -30,16 +30,16 @@ sub newchain
   }
   else
   {
-    print "$chainname chain does not exists. ";
+    # print "$chainname chain does not exists. ";
     $ipt_obj->create_chain('filter', $chainname);
-    print "Create chain $chainname ";
+    # print "Create chain $chainname ";
     setchainrules($chainname);
   }
 }
-sub setchainrules 
+sub setchainrules
 {
-	my $networks = $_[0];
-	open(FH, $networks . ".txt");
+	my $chainname = $_[0];
+	open(FH, $chainname . ".txt");
 	my @host_cfg = <FH>;
 	close FH;
 
@@ -48,14 +48,26 @@ sub setchainrules
   	chomp $cfg_line;
   	if ( not $cfg_line =~ m/(^\#|^$)/  )
 		{
-			# print "Test: $cfg_line\n";
 			($rv, $out_ar, $errs_ar) = $ipt_obj->add_ip_rule($cfg_line, '0.0.0.0/0', 5, 'filter', $chainname, 'REJECT', { 'protocol' => 'tcp', 'd_port' => '22', 'comment' => "test: $host" });
 		}
 	}
 }
 
+sub flush_all_rules
+{
+	my $chainname = $_[0];
+	# print "Delete Input Chain for $chainname\n";
+	($rv, $out_ar, $errs_ar) = $ipt_obj->delete_ip_rule('0.0.0.0/0', '0.0.0.0/0', 'filter', 'INPUT', $chainname, { 'protocol' => 'tcp', 'd_port' => '22' });
+	# print "Flush and delete $chainname\n";
+  ($rv, $out_ar, $errs_ar) = $ipt_obj->run_ipt_cmd("/sbin/iptables -F $chainname; /sbin/iptables -X $chainname;");
+}
+
+
 foreach $net (@networks)
 {
+	print "Net: $net, set INPUT rule\n";
+	flush_all_rules($net);
 	newchain($net);
+	($rv, $out_ar, $errs_ar) = $ipt_obj->add_ip_rule('0.0.0.0/0', '0.0.0.0/0', 5, 'filter', 'INPUT', $net, { 'protocol' => 'tcp', 'd_port' => '22' });
 }
 
