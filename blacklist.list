@@ -1,10 +1,28 @@
 112.64.0.0/15|CHINA UNICOM Shanghai network
-121.191.8.0/25|KOREAN
 218.56.0.0/14|China Unicom Shandong province network
-65.19.128.0/18|Hurricane Electric
 61.234.146.0/24|China Railcom Hubei Wuhan Subbranch
-103.12.72.58|Unbekannte AS- oder IP-Netzwerk-Nummer
+219.148.0.0/17|CHINANET hebei province network China Telecom
+219.148.128.0/19|CHINANET hebei province network China Telecom
+202.103.0.0/18|CHINANET Hubei province network China Telecom
+222.80.0.0/15|CHINANET Xinjiang province network China Telecom
+222.82.0.0/16|CHINANET Xinjiang province network China Telecom
+222.83.0.0/17|CHINANET Xinjiang province network China Telecom
 60.0.0.0/13|China Unicom Hebei Province Network
+60.0.0.0/15|China Unicom Hebei Province Network
+60.0.0.0/16|China Unicom Hebei Province Network
+121.8.0.0/13|CHINANET Guangdong province network China Telecom Beijing
+60.220.0.0/14|China Unicom Shanxi Province Network
+61.157.0.0/16|CHINANET Sichuan province network Data Communication Division China Telecom China
+124.160.0.0/16|China Unicom Zhejiang province network
+171.104.0.0/13|CHINANET GUANGXI PROVINCE NETWORK
+61.156.0.0/16|China Unicom Shandong province network
+218.104.0.0/14|China Unicom IP network
+222.168.0.0/15|CHINANET Jilin province network
+58.208.0.0/12|CHINANET jiangsu province network
+60.0.0.0/13|China Unicom Hebei Province Network
+121.191.8.0/25|KOREAN
+65.19.128.0/18|Hurricane Electric
+103.12.72.58|Unbekannte AS- oder IP-Netzwerk-Nummer
 78.47.145.150|42soft ltd
 112.124.0.0/14|Alibaba (China) Technology Co., Ltd.
 114.112.48.0/20|Beijing Blue Ocean information technology co.LTD
@@ -18,9 +36,6 @@
 86.43.0.0/16|eircom, Ireland
 200.178.175.160/28|Nova Auto peças Ltda. BR
 204.29.163.0/24|Basketball Properties Ltd Miami US
-219.148.0.0/17|CHINANET hebei province network China Telecom
-219.148.128.0/19|CHINANET hebei province network China Telecom
-202.103.0.0/18|CHINANET Hubei province network China Telecom
 85.25.129.0/24|BSB-SERVICE Dedicated Server Hosting PlusServer AG
 85.25.130.0/23|BSB-SERVICE Dedicated Server Hosting PlusServer AG
 85.25.132.0/22|BSB-SERVICE Dedicated Server Hosting PlusServer AG
@@ -30,13 +45,7 @@
 91.214.248.0/22|PP Vitaliy Zayets UA
 93.115.80.0/21|Dimitrie Pompei 9-9A Cladirea 24, etaj 2, sector 2 Bucuresti ro
 85.143.160.0/22|Pirix customers networks PIRIX, St.Petersburg, Russia
-222.80.0.0/15|CHINANET Xinjiang province network China Telecom
-222.82.0.0/16|CHINANET Xinjiang province network China Telecom
-222.83.0.0/17|CHINANET Xinjiang province network China Telecom
 119.161.128.0/17|Beijing hsoft technologies inc China
-60.0.0.0/13|China Unicom Hebei Province Network
-60.0.0.0/15|China Unicom Hebei Province Network
-60.0.0.0/16|China Unicom Hebei Province Network
 91.121.160.0/19|OVH SAS Dedicated Servers
 188.132.216.0/21|Mars-Customer192 MarsGlobalDatacenter TR
 200.11.128.0/17|TRUE, The Real Unix Experts 33326 - WESTON, FL, UNITED STATES
@@ -48,7 +57,6 @@
 216.55.160.0/21|Codero, Lenexa, US
 216.55.168.0/22|Codero, Lenexa, US
 199.201.120.0/21|Synaptica, Anjou, CA
-121.8.0.0/13|CHINANET Guangdong province network China Telecom Beijing
 190.1.128.0/19|METROTEL REDES S.A. CO-MRSA1-LACNIC BARRANQUILLA - AT CO
 49.238.128.0/17|LXN Guro-dong Guro-gu Seoul
 178.18.132.0/24|Xynta Internet Solutions NL
@@ -76,7 +84,6 @@
 42.96.128.0/17|Alibaba (Beijing) Technology Co., Ltd. 9F,Tower A Winterless center,NO.1 West Da Wang Lu, Chaoyang District,Beijing
 218.30.96.0/19|CHINANET-IDC-BJ CHINANET IDC center China Telecom
 50.56.0.0/15|Rackspace Cloud Servers
-60.220.0.0/14|China Unicom Shanxi Province Network
 61.19.20.0/22|CAT Phitsanulok office , Phitsanulok TH
 83.141.3.16/28|unitedGAMEserver, Muenchen DE
 202.111.187.96/27|Changchun City, Earth Country Netbar,  No.32 Changqing Street, Changchun, Jilin Province, China.
@@ -93,20 +100,25 @@
 202.117.0.0/18|Xian Jiaotong University China
 82.222.96.0/21|Tellcom Fiber Dynamic TR
 208.74.160.0/22|Logical Telecom, L.P. McAllen US
-61.157.0.0/16|CHINANET Sichuan province network Data Communication Division China Telecom China
 173.203.96.0/19|Rackspace Cloud Servers
 78.129.252.0/24|iomart Hosting Ltd t/a IOVPS GB
-124.160.0.0/16|China Unicom Zhejiang province network
 171.0.0.0/8|APNIC-ERX-171
-171.104.0.0/13|CHINANET GUANGXI PROVINCE NETWORK
 85.214.192.0/18|Strato Rechenzentrum, Berlin 
 109.86.188.0/24|TRIOLAN
-222.168.0.0/15|CHINANET Jilin province network
 200.122.135.0/25|Telecom Logistics S.A.
 88.200.122.192/26|S-STS-KR-EDUS-NET ESIC Kranj   Visja strokovna sola Kranj
-58.208.0.0/12|CHINANET jiangsu province network
 186.67.0.0/16|ENTEL CHILE S.A.
 203.198.32.0/19|PCCW Limited
+203.198.64.0/18|PCCW Limited
+203.198.128.0/17|PCCW Limited
 176.9.83.96/27|HETZNER-RZ15
 97.64.128.0/17|MEDIACOM-ENTERPRISE-CUST
 219.239.227.0/24|HANG-KONG-HANG-TIAN-DA-XUE
+125.128.0.0/11|Korea Telecom
+78.189.98.0/23|Turk Telecom
+78.189.100.0/22|Turk Telecom 
+78.189.104.0/21|Turk Telecom
+78.189.112.0/22|Turk Telecom
+78.189.116.0/23|Turk Telecom
+210.121.0.0/16|Korea Telecom
+210.122.0.0/15|Korea Telecom
