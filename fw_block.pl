@@ -48,7 +48,8 @@ sub setchainrules
   	chomp $cfg_line;
   	if ( not $cfg_line =~ m/(^\#|^$)/  )
 		{
-			print "Test: $cfg_line\n";
+			# print "Test: $cfg_line\n";
+			($rv, $out_ar, $errs_ar) = $ipt_obj->add_ip_rule($cfg_line, '0.0.0.0/0', 5, 'filter', $chainname, 'REJECT', { 'protocol' => 'tcp', 'd_port' => '22', 'comment' => "test: $host" });
 		}
 	}
 }
