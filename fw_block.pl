@@ -19,6 +19,7 @@ my $rv = 0;
 my $out_ar = [];
 my $errs_ar = [];
 
+my $path = '/opt/scripts/';
 my @networks = ('asian', 'russian');
 
 sub newchain
@@ -39,7 +40,7 @@ sub newchain
 sub setchainrules
 {
 	my $chainname = $_[0];
-	open(FH, $chainname . ".txt");
+	open(FH, $path . '/' . $chainname . ".txt");
 	my @host_cfg = <FH>;
 	close FH;
 
