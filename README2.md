@@ -1,1 +1,0 @@
-/Users/rpr/FolderTest.scpt
