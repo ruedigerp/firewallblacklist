@@ -1,1 +1,1 @@
-README.md
+/Users/rpr/FolderTest.scpt
